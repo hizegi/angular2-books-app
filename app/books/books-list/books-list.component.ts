@@ -14,4 +14,10 @@ export class BooksListComponent {
   bookDescription: string = "Book of historical fiction";
   bookReviews: number = 15;
   bookImageUrl: string = "app/assets/images/656.jpg";
+
+  showImage: boolean = true;
+
+  toggleImage(): void {
+    this.showImage = !this.showImage;
+  }
 }

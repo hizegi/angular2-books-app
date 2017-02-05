@@ -15,7 +15,11 @@ var BooksListComponent = (function () {
         this.bookDescription = "Book of historical fiction";
         this.bookReviews = 15;
         this.bookImageUrl = "app/assets/images/656.jpg";
+        this.showImage = true;
     }
+    BooksListComponent.prototype.toggleImage = function () {
+        this.showImage = !this.showImage;
+    };
     return BooksListComponent;
 }());
 BooksListComponent = __decorate([
